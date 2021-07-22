@@ -21,10 +21,11 @@ const ProductCard = ({product}: Props) => {
     price,
     oldPrice,
     faded,
+    card,
   } = ProductCardStyles;
 
   return (
-    <Card>
+    <Card style={card}>
       <View style={[imageContainer]}>
         <Image
           style={[image]}
@@ -44,7 +45,7 @@ const ProductCard = ({product}: Props) => {
         <Text style={[p]}>
           from
           <Text style={[price]}> ${product.price} </Text>
-          <Text style={[oldPrice, faded]}>${product.oldPrice}</Text>
+          <Text style={[oldPrice, faded]}>{product.oldPrice}</Text>
         </Text>
       </View>
     </Card>

@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  card: {
+    marginBottom: 5,
+  },
   imageContainer: {
     flex: 2,
   },
