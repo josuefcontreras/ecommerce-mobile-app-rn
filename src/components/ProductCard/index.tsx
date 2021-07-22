@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import {Product} from '../../models';
 import Card from '../Card';
 import RatingIcons from '../RatingIcons';
 import ProductCardStyles from './styles';
+
+import {Product} from '../../models';
 
 type Props = {
   product: Product;
