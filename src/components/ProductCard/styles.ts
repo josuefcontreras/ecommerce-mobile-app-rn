@@ -1,14 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const ownStyles = StyleSheet.create({
-  cardContainer: {
-    flexDirection: 'row',
-    borderWidth: 2,
-    borderColor: '#efefef',
-    padding: 10,
-    borderRadius: 5,
-    backgroundColor: '#fff',
-  },
+const styles = StyleSheet.create({
   imageContainer: {
     flex: 2,
   },
@@ -46,4 +38,4 @@ const ownStyles = StyleSheet.create({
   },
 });
 
-export default ownStyles;
+export default styles;

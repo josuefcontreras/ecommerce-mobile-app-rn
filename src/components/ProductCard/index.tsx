@@ -1,43 +1,53 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {Product} from '../../models';
+import Card from '../Card';
 import RatingIcons from '../RatingIcons';
-import ownStyles from './ownstyles';
+import ProductCardStyles from './styles';
 
 type Props = {
   product: Product;
 };
 
 const ProductCard = ({product}: Props) => {
+  const {
+    imageContainer,
+    image,
+    textContainer,
+    p,
+    title,
+    ratingsContainer,
+    ratingCount,
+    price,
+    oldPrice,
+    faded,
+  } = ProductCardStyles;
+
   return (
-    <View style={[ownStyles.cardContainer]}>
-      <View style={[ownStyles.imageContainer]}>
+    <Card>
+      <View style={[imageContainer]}>
         <Image
-          style={[ownStyles.image]}
+          style={[image]}
           source={{
             uri: product.image,
           }}
         />
       </View>
-      <View style={[ownStyles.textContainer]}>
-        <Text style={[ownStyles.p, ownStyles.title]}>{product.title}</Text>
-        <View style={[ownStyles.ratingsContainer]}>
+      <View style={[textContainer]}>
+        <Text style={[p, title]}>{product.title}</Text>
+        <View style={[ratingsContainer]}>
           <Text>
             <RatingIcons avgRating={product.avgRating} />
-            <Text style={[ownStyles.p, ownStyles.ratingCount]}>
-              {product.ratings}
-            </Text>
+            <Text style={[p, ratingCount]}>{product.ratings}</Text>
           </Text>
         </View>
-        <Text style={[ownStyles.p]}>
+        <Text style={[p]}>
           from
-          <Text style={[ownStyles.price]}> ${product.price} </Text>
-          <Text style={[ownStyles.oldPrice, ownStyles.faded]}>
-            ${product.oldPrice}
-          </Text>
+          <Text style={[price]}> ${product.price} </Text>
+          <Text style={[oldPrice, faded]}>${product.oldPrice}</Text>
         </Text>
       </View>
-    </View>
+    </Card>
   );
 };
 
