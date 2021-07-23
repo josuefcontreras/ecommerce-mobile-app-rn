@@ -7,7 +7,7 @@ export default [
       "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/cleanarchitecture.jpg',
-    avgRating: 4.2,
+    avgRating: 4.0,
     ratings: 1325,
     price: 20.98,
     oldPrice: 24.06,
@@ -17,7 +17,7 @@ export default [
     title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/cleancode.jpg',
-    avgRating: 4.8,
+    avgRating: 4.5,
     ratings: 2989,
     price: 32.98,
     oldPrice: 34.06,
@@ -37,7 +37,7 @@ export default [
       'Havit Mechanical Keyboard Wired 89 Keys Gaming Keyboard Red Switch Keyboard with PBT Keycaps for PC Gamer',
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/keyboard1.jpg',
-    avgRating: 4.8,
+    avgRating: 4.88,
     ratings: 2989,
     price: 99.98,
     oldPrice: 120.06,
@@ -68,7 +68,7 @@ export default [
     title: 'Mouse Havit Mechanical Keyboard Wired 89 Keys Gaming Keyboard',
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse2.jpg',
-    avgRating: 4.8,
+    avgRating: 1.8,
     ratings: 2989,
     price: 99.98,
     oldPrice: 120.06,

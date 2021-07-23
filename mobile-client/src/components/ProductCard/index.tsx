@@ -46,7 +46,9 @@ const ProductCard = ({product}: Props) => {
         <Text style={[p]}>
           from
           <Text style={[price]}> ${product.price} </Text>
-          <Text style={[oldPrice, faded]}>{product.oldPrice}</Text>
+          {product.oldPrice && (
+            <Text style={[oldPrice, faded]}>$ {product.oldPrice}</Text>
+          )}
         </Text>
       </View>
     </Card>

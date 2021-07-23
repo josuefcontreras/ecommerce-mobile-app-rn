@@ -30,7 +30,6 @@ const App = () => {
   return (
     <SafeAreaView style={[backgroundStyle, styles.constainer]}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <HomeScreen />
     </SafeAreaView>
   );
 };

@@ -6,7 +6,7 @@ type Props = {};
 const PropductDetailScreen = () => {
   return (
     <View>
-      <Text> </Text>
+      <Text>Product Details Screen</Text>
     </View>
   );
 };
