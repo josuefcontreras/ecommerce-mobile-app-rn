@@ -5,7 +5,6 @@ import express from "express";
 import { urlencoded, json } from "body-parser";
 import { requireAuth } from "./middlewares";
 
-import tracksRouter from "./routes/trackRoutes";
 import authRouter from "./routes/authRoutes";
 
 const app = express();
@@ -14,7 +13,6 @@ app.use(urlencoded({ extended: true }));
 app.use(json());
 
 app.use(authRouter);
-app.use(tracksRouter);
 
 const mongoose = require("mongoose");
 
